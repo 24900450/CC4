@@ -1,4 +1,6 @@
 # EX 4 :DEPLOYMENT AND CONFIGURATION OF A PRIVATE CLOUD IN AWS
+## Name : SURYANARAYANAN T
+## Register Number : 212224040341
 ## Aim
 
 To create a customised **Amazon VPC** with public and private subnets, configure route tables and security groups, and launch an **Amazon EC2 web server** inside the VPC.
@@ -123,9 +125,9 @@ service httpd start
 
 The `lab-vpc` VPC was successfully created with CIDR block `10.0.0.0/16`.
 
-**Screenshot:** `images/01-vpc.png`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a6413b10-425b-4a00-8e4a-346a75a2b304" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9c89fd9-1654-4be5-b58e-0988a650ab49" />
 
-![VPC](images/01-vpc.png)
 
 ---
 
@@ -133,9 +135,9 @@ The `lab-vpc` VPC was successfully created with CIDR block `10.0.0.0/16`.
 
 Four subnets were successfully created across two Availability Zones, consisting of two public and two private subnets.
 
-**Screenshot:** `images/02-subnets.png`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/986414d4-4eb1-42ce-b3ce-972751e23a47" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/859e8fc4-d62c-49f7-b4a4-b9c19d2b863a" />
 
-![Subnets](images/02-subnets.png)
 
 ---
 
@@ -143,9 +145,11 @@ Four subnets were successfully created across two Availability Zones, consisting
 
 The public route table was configured to route Internet traffic through the Internet Gateway, while the private route table was configured to route Internet-bound traffic through the NAT Gateway.
 
-**Screenshot:** `images/03-route-tables.png`
 
-![Route Tables](images/03-route-tables.png)
+<img width="1920" height="1080" alt="Screenshot 2026-08-21 101618" src="https://github.com/user-attachments/assets/d9ff026a-4c0d-417e-bdfa-d6a9f9be1d77" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9b9198c5-f3cd-4ff6-9197-864c8ebf4320" />
+
 
 ---
 
@@ -153,9 +157,8 @@ The public route table was configured to route Internet traffic through the Inte
 
 The `Web Security Group` was successfully created with HTTP access on port `80`.
 
-**Screenshot:** `images/04-security-group.png`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7abae13d-3315-42e9-8132-3265bf8f99fc" />
 
-![Security Group](images/04-security-group.png)
 
 ---
 
@@ -163,9 +166,9 @@ The `Web Security Group` was successfully created with HTTP access on port `80`.
 
 The EC2 instance `Web Server 1` was successfully launched in the public subnet with the required security group.
 
-**Screenshot:** `images/05-ec2-instance.png`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e7469f0e-101b-48bb-aa05-b44a8cb920d5" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4ec86990-bbbc-4e11-9e14-4343ea452155" />
 
-![EC2 Instance](images/05-ec2-instance.png)
 
 ---
 
@@ -174,10 +177,6 @@ The EC2 instance `Web Server 1` was successfully launched in the public subnet w
 After the instance passed both status checks, its Public IPv4 DNS was opened in a browser.
 
 The web application successfully displayed the AWS logo and EC2 instance metadata, confirming that the web server was running correctly.
-
-**Screenshot:** `images/06-web-server.png`
-
-![Web Server](images/06-web-server.png)
 
 ## Result
 
